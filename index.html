@@ -7,15 +7,21 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
     <title>Techman</title>
 </head>
-<body>
+<body class="arrows">
     <header>
         <h1>Techman</h1>
     </header>
     <main class="landingPage">
         <section>
-            <h2>Techman is just hangman, but the secret words will be centered around technology. Press play to start</h2>
+            <h2 id="insructionEl"></h2>
         </section>
-        <a href="./game.html">Play</a>
+        <audio id="typeSound" src="./assets/audio/typewriter.mp3" preload="auto"></audio>
+        <div id="btn">
+            <a href="./game.html" id="playBtn">Play</a>
+        </div>
     </main>
+
+<script src="./assets/js/script.js"></script>
+
 </body>
 </html>
