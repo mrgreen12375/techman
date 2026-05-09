@@ -38,7 +38,7 @@ function playSound(event){
         displayInstructions();
     
         setTimeout(() => {
-          window.location.href = "./game.html";
+          location.href = "./game.html";
         }, instructions.length * 100 + 500);
     
       });

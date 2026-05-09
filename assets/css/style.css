@@ -60,9 +60,9 @@ main h2 {
     align-items: center;
 }
 
-.gameDisplay img {
-    height: 400px;
-}
+#head, #body, #leftArm, #rightArm, #leftLeg, #rightLeg {
+    display: none;
+  }
 
 .keyboardDisplay {
     display: flex;
