@@ -54,6 +54,37 @@ main h2 {
     text-align: center;
 }
 
+.gameDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameDisplay img {
+    height: 400px;
+}
+
+.keyboardDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+#keyboard button {
+    font-size: 20px;
+    font-family: "Share Tech", sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
 @media screen and (max-width: 650px) {
     .arrows {
         background-position: 53% -20%;
