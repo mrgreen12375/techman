@@ -5,7 +5,7 @@ const hangmanParts = ["head", "body", "leftArm", "rightArm", "leftLeg", "rightLe
 
 const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-const secretWords = ["COMPUTER", "SOFTWARE", "CODING", "MEGABYTE", "APPLICATION", "CYBERSECURITY", "DATABASE", "WEBSITE", "HARDWARE", "KEYBOARD", "MONITOR", "SPYWARE", "TERMINAL"];
+const secretWords = ["COMPUTER", "SOFTWARE", "CODING", "MEGABYTE", "DATABASE", "WEBSITE", "HARDWARE", "KEYBOARD", "MONITOR", "SPYWARE", "TERMINAL"];
 
 let word = "";
 let guessedLetters = [];
