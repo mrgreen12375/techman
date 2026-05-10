@@ -17,9 +17,7 @@ const playAgainBtn = document.querySelector("#playAgainBtn");
 const noThanksBtn = document.querySelector("#noThanksBtn");
 
 function showModal(message) {
-
     modalMessage.textContent = message;
-
     modal.classList.remove("hidden");
 }
 
