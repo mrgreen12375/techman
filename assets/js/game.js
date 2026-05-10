@@ -11,6 +11,18 @@ let word = "";
 let guessedLetters = [];
 let wrongGuesses = 0;
 
+const modal = document.querySelector("#modal");
+const modalMessage = document.querySelector("#modalMessage");
+const playAgainBtn = document.querySelector("#playAgainBtn");
+const noThanksBtn = document.querySelector("#noThanksBtn");
+
+function showModal(message) {
+
+    modalMessage.textContent = message;
+
+    modal.classList.remove("hidden");
+}
+
 function randomSecretWord(){
     const index = Math.floor(Math.random() * secretWords.length);
     word = secretWords[index];
@@ -80,28 +92,26 @@ function result() {
 
     if (won) {
         setTimeout(() => {
-            const playAgain = confirm("You Win! - Would you like to play again?");
-            if (playAgain) {
-                location.reload();
-            } else {
-                location.href = "./index.html";
-            }
+            showModal("You Win!");
+
         }, 50);
         return;
     }
 
     if (wrongGuesses >= 6) {
         setTimeout(() => {
-            const playAgain = confirm("You Lose! - Would you like to play again?");
-            if (playAgain) {
-                location.reload();
-            } else {
-                location.href = "./index.html";
-            }
+            showModal("You Lose!");
         }, 50);
     }
 }
 
-
 displayLetters();
 randomSecretWord();
+
+playAgainBtn.addEventListener("click", () => {
+    location.reload();
+});
+
+noThanksBtn.addEventListener("click", () => {
+    location.href = "./index.html";
+});
